@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -76,24 +78,101 @@ public class Main {
         int count = 0;
         for (int i = 0; i <= 20; i++) {
             if (i % 2 == 0) {
-                count++;
+//                count++;
 //                System.out.print(i + " ");
             }
         }
 //        System.out.println(count);
 
 //uzduotis lengvesni 9
+        int count1 = 0;
+        int count2 = 0;
+        for (int i = 0; i < plants.length; i++) {
+            if (plants[i].length() < 5) {
+                count1++;
+            }
+            if (plants[i].length() > 7) {
+                count2++;
+            }
+        }
+//        System.out.println("Masyve elementu trumpesniu nei 5 yra "+count1 + " o elementu ilgesniu nei 7 yra "+count2);
 
 
 //uzduotis lengvesni 10
+        int count3 = 0;
+        for (int i = 0; i < plants.length; i++) {
+            if (plants[i].length() > 5 && plants[i].length() < 10) {
+                count3++;
+            }
+        }
+//        System.out.println("Masyve elementu didesniu nei 5 bet mazesniu nei 10 yra: "+count3);
 
 
 //uzduotis sunkesni 1
 
-        int rng = (int) Math.round(Math.random() * 300);
-
+        int count150 = 0;
+        int rng = 0;
         for (int i = 0; i <= 300; i++) {
+            rng = (int) Math.round(Math.random() * 300);
+            if (rng > 150) {
+                count150++;
+            }
+            if (rng > 275) {
+//                System.out.print("[" + rng + "] ");
+            } else {
+//                System.out.print(rng + " ");
+            }
+        }
+//        System.out.println("Skaiciu virs 150 yra " + count150);
 
+
+//uzduotis sunkesni 2
+
+        String s = " ";
+        for (int i = 77; i <= 3000; i += 77) {
+            s += i + ",";
+        }
+        s = s.substring(0, s.length() - 1);
+//        System.out.println(s);
+
+//uzduotis sunkesni 3
+
+        for (int i = 1; i < 10; i++) {
+//            System.out.println();
+            for (int j = 1; j < 10; j++) {
+//                System.out.print(" * ");
+            }
+        }
+
+
+//uzduotis sunkesni 4
+
+        for (int i = 1; i < 10; i++) {
+//            System.out.println();
+            for (int j = 1; j < 10; j++) {
+//                System.out.print(" * ");
+            }
+        }
+
+//uzduotis sunkesni 5
+
+
+        while (true) {
+            if (Math.random() > 0.5) {
+                System.out.println("Iskrito skaicius");
+            } else {
+                System.out.println("Iskrito herbas");
+                break;
+            }
+        }
+
+        while (true) {
+            if (Math.random() > 0.5) {
+                System.out.println("Iskrito skaicius");
+            } else {
+                System.out.println("Iskrito herbas");
+                break;
+            }
         }
 
 
